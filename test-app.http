@@ -1,0 +1,27 @@
+### Test home page
+GET https://cst8919-a1-aqb3e5dhd6fvdmb2.canadacentral-01.azurewebsites.net/
+Accept: application/json
+
+###
+
+### Test successful login (simulate form post)
+POST https://cst8919-a1-aqb3e5dhd6fvdmb2.canadacentral-01.azurewebsites.net/login
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=password
+
+###
+
+### Test failed login (wrong password)
+POST https://cst8919-a1-aqb3e5dhd6fvdmb2.canadacentral-01.azurewebsites.net/login
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=wrong
+
+###
+
+### Test failed login (unknown user)
+POST https://cst8919-a1-aqb3e5dhd6fvdmb2.canadacentral-01.azurewebsites.net/login
+Content-Type: application/x-www-form-urlencoded
+
+username=intruder&password=hacker 
