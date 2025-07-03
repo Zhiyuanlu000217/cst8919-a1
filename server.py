@@ -60,7 +60,13 @@ def home():
 def callback():
     try:
         token = oauth.auth0.authorize_access_token()
-        session["user"] = token
+        # Fetch user info from Auth0 userinfo endpoint
+        userinfo = oauth.auth0.userinfo()
+        session["user"] = {"userinfo": {
+            "sub": userinfo.get("sub"),
+            "email": userinfo.get("email"),
+            "name": userinfo.get("name")
+        }}
         
         # Extract user information for logging
         user_info = get_user_info_from_session()
