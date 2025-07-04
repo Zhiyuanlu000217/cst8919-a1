@@ -1,5 +1,5 @@
 # CST8919-A1
-
+Youtube link: https://youtu.be/KIBAkOGnRK4
 ## Set up the project
 
 1. Fork this repository, make sure the repository is public accessible.
