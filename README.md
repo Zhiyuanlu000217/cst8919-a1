@@ -98,3 +98,8 @@ Explaination:
 - Evaluates each user (user_id) separately.
 - Notifies you via the configured action group.
 
+The email will look like this:
+<img width="888" alt="Screenshot 2025-07-03 at 9 39 14 PM" src="https://github.com/user-attachments/assets/a5613766-6d5d-4402-b5e9-417f62d1dbe8" />
+
+
+
